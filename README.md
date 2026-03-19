@@ -1,6 +1,6 @@
-Infinite Hackathon
+### Infinite Hackathon
 
-# # About
+## About
 This project is part of the Infinite Hackathon. It is a full-stack web application focused on building a real-time collaborative platform similar to Google Docs.
 ---
 ## Tech Stack
