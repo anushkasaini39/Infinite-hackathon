@@ -1,7 +1,7 @@
 ### Infinite Hackathon
 
 ## About
-This project is part of the Infinite Hackathon. It is a full-stack web application focused on building a real-time collaborative platform similar to Google Docs.
+It's a mern-stack web app focused on building a real-time collaborative platform similar to Google Docs.. soo this is our google docs lite, hope u like it
 ---
 ## Tech Stack
 ### Frontend
