@@ -1,6 +1,6 @@
 # # Infinite Hackathon
 
-#About
+# # About
 Soo luckily we got shortlisted for the first round for internship in a company named Infinite Locus. So their first round is a hackathon, reallyyy a hackathon. So there we were asked to make a web app, basically a MERN stack app focused on building a real-time collaborative platform similar to Google Docs.
 soo this is our google docs lite, hopy u like it :)
 ---
