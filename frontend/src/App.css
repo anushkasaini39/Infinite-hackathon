@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Roboto", sans-serif;
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* ── Join Screen ───────────────────────────────── */
+.join-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4f8ef7 0%, #7c3aed 100%);
+}
+
+.join-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+}
+
+.join-logo {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.join-form h1 {
+  margin-bottom: 0.25rem;
+  color: #1e1e2e;
+  font-size: 1.5rem;
+}
+
+.join-subtitle {
+  color: #888;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.join-form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.join-form input:focus {
+  border-color: #4f8ef7;
+}
+
+.join-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #4f8ef7, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.join-form button:hover {
+  opacity: 0.9;
+}
+
+/* ── Main Layout ───────────────────────────────── */
+.doc-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ── Sidebar ───────────────────────────────────── */
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1rem;
+  gap: 1.25rem;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sidebar-icon {
+  font-size: 1.4rem;
+}
+
+.room-info {
+  background: #2a2a3e;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.room-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.room-id-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  word-break: break-all;
+  margin-bottom: 0.6rem;
+}
+
+.copy-button {
+  padding: 0.4rem 1rem;
+  background: #4f8ef7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copy-button:hover {
+  background: #3a7de0;
+}
+
+.users-section h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #888;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dot-green {
+  color: #a6e3a1;
+  font-size: 0.65rem;
+}
+
+.users-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.users-section li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  background: #2a2a3e;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f8ef7, #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.typing-indicator {
+  font-size: 0.78rem;
+  color: #a6e3a1;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 1; }
+  to   { opacity: 0.5; }
+}
+
+.word-count {
+  margin-top: auto;
+  font-size: 0.75rem;
+  color: #555;
+  text-align: center;
+}
+
+.leave-button {
+  padding: 0.7rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.leave-button:hover {
+  background: #c0392b;
+}
+
+/* ── Editor Area ───────────────────────────────── */
+.editor-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f0f2f8;
+}
+
+.doc-title-bar {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.doc-title-input {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e1e2e;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  max-width: 600px;
+}
+
+.doc-title-input::placeholder {
+  color: #bbb;
+}
+
+/* ── Quill Editor ──────────────────────────────── */
+.quill-wrapper {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+}
+
+.quill-wrapper .quill {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.quill-wrapper .ql-toolbar.ql-snow {
+  border: none;
+  border-bottom: 1px solid #ececec;
+  background: #fafafa;
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.quill-wrapper .ql-container.ql-snow {
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+  font-family: "Georgia", serif;
+}
+
+.quill-wrapper .ql-editor {
+  min-height: 500px;
+  padding: 1.5rem 2rem;
+  line-height: 1.8;
+  color: #1e1e2e;
+}
+
+.quill-wrapper .ql-editor.ql-blank::before {
+  color: #bbb;
+  font-style: italic;
+}
