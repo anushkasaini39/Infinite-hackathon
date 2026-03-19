@@ -1,12 +1,9 @@
-# # Infinite Hackathon
+Infinite Hackathon
 
 # # About
-Soo luckily we got shortlisted for the first round for internship in a company named Infinite Locus. So their first round is a hackathon, reallyyy a hackathon. So there we were asked to make a web app, basically a MERN stack app focused on building a real-time collaborative platform similar to Google Docs.
-soo this is our google docs lite, hope u like it :)
+This project is part of the Infinite Hackathon. It is a full-stack web application focused on building a real-time collaborative platform similar to Google Docs.
 ---
-
 ## Tech Stack
-
 ### Frontend
 - React (Vite)
 - JavaScript
@@ -20,12 +17,29 @@ soo this is our google docs lite, hope u like it :)
 - Socket.io (for real-time updates)
 - MongoDB (Database)
 
----
-
 ## Features
 - Real-time document editing
 -     Live updates across users
 - Fast frontend using Vite
 - Full-stack integration
 
----
+##  How to Run Locally
+### Clone the repository
+
+git clone https://github.com/
+<your-username>/Infinite-hackathon.git
+
+###  Install dependencies
+Frontend:
+
+cd frontend
+npm install
+
+Backend:
+cd backend
+npm install
+
+###  Run the project
+
+Frontend: npm run dev
+Backend:  npm start
