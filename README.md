@@ -1,7 +1,7 @@
 ### Infinite Hackathon
 
 ## About
-It's a mern-stack web app focused on building a real-time collaborative platform similar to Google Docs.. soo this is our google docs lite, hope u like it
+It's a mern-stack web app focused on building a real-time collaborative platform similar to Google Docs.. soo this is our google docs lite :)
 ---
 ## Tech Stack
 ### Frontend
