@@ -19,15 +19,14 @@ It's a mern-stack web app focused on building a real-time collaborative platform
 
 ## Features
 - Real-time document editing
--     Live updates across users
+- Live updates across users
 - Fast frontend using Vite
 - Full-stack integration
 
 ##  How to Run Locally
 ### Clone the repository
 
-git clone https://github.com/
-<your-username>/Infinite-hackathon.git
+git clone https://github.com//anushkasaini39/Infinite-hackathon.git
 
 ###  Install dependencies
 Frontend:
